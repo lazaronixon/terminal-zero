@@ -1,3 +1,5 @@
+<img width="2304" height="1296" alt="Screenshot 2025-10-14 at 13 09 47" src="https://github.com/user-attachments/assets/cae23db4-29f3-4bc2-9c4e-7137b49b7ea4" />
+
 ## Requirements
 
 ```
