@@ -37,6 +37,7 @@ chmod -R go-w "$(brew --prefix)/share/zsh"
 source ~/.local/share/terminal-zero/default/zsh/rc
 ```
 
-## Guide
+## Guides
 
-[Omarchy - Shell Tools](https://learn.omacom.io/2/the-omarchy-manual/57/shell-tools)
+- [The Omarchy Manual - Shell Tools](https://learn.omacom.io/2/the-omarchy-manual/57/shell-tools)
+- [The Omarchy Manual - Prompt](https://learn.omacom.io/2/the-omarchy-manual/95/prompt)
