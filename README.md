@@ -36,3 +36,7 @@ chmod -R go-w "$(brew --prefix)/share/zsh"
 # All the default terminal-zero aliases and functions
 source ~/.local/share/terminal-zero/default/zsh/rc
 ```
+
+## Guide
+
+[Omarchy - Shell Tools](https://learn.omacom.io/2/the-omarchy-manual/57/shell-tools)
