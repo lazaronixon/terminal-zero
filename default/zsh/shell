@@ -1,0 +1,13 @@
+# History control
+setopt APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+HISTSIZE=32768
+SAVEHIST="${HISTSIZE}"
+
+# Autocompletion
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+autoload -Uz compinit && compinit
+
+# Set theme for bat command
+export BAT_THEME=ansi
