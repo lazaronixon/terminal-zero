@@ -1,3 +1,9 @@
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
 # Enable case-insensitive tab completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
@@ -5,28 +11,11 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 unsetopt list_ambiguous
 
 # Arrow keys match what you've typed so far against your command history
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-
-bindkey -M emacs "^[[A" up-line-or-beginning-search
-bindkey -M viins "^[[A" up-line-or-beginning-search
-bindkey -M vicmd "^[[A" up-line-or-beginning-search
-
-bindkey -M emacs "^[[B" down-line-or-beginning-search
-bindkey -M viins "^[[B" down-line-or-beginning-search
-bindkey -M vicmd "^[[B" down-line-or-beginning-search
-
-# Immediately add a trailing slash when autocompleting symlinks to directories
-zstyle ':completion:*' special-dirs true
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
 
 # If there are more than 200 possible completions for a word, ask to show them all
 LISTMAX=200
-
-# Show extra file information when completing, like `ls -F` does
-setopt list_types
 
 # Complete from both ends of a word
 setopt complete_in_word
