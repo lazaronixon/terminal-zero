@@ -1,4 +1,4 @@
-<img width="2304" height="1296" alt="Screenshot 2025-10-14 at 13 09 47" src="https://github.com/user-attachments/assets/cae23db4-29f3-4bc2-9c4e-7137b49b7ea4" />
+<img width="960" height="540" alt="background" src="https://github.com/user-attachments/assets/35012f6c-5507-4fb5-b893-080585bc0362" />
 
 ## Requirements
 
