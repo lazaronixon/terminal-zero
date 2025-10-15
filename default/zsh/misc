@@ -1,0 +1,36 @@
+# Enable case-insensitive tab completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# Display all autocomplete matches on first TAB press when ambiguous
+unsetopt list_ambiguous
+
+# Start typing + [Up-Arrow] - fuzzy find history forward
+autoload -U up-line-or-beginning-search
+zle -N up-line-or-beginning-search
+
+bindkey -M emacs "^[[A" up-line-or-beginning-search
+bindkey -M viins "^[[A" up-line-or-beginning-search
+bindkey -M vicmd "^[[A" up-line-or-beginning-search
+
+# Start typing + [Down-Arrow] - fuzzy find history backward
+autoload -U down-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey -M emacs "^[[B" down-line-or-beginning-search
+bindkey -M viins "^[[B" down-line-or-beginning-search
+bindkey -M vicmd "^[[B" down-line-or-beginning-search
+
+# Immediately add a trailing slash when autocompleting symlinks to directories
+zstyle ':completion:*' special-dirs true
+
+# If there are more than 200 possible completions for a word, ask to show them all
+LISTMAX=200
+
+# Show extra file information when completing, like `ls -F` does
+setopt list_types
+
+# Complete from both ends of a word
+setopt complete_in_word
+
+# Coloring for zsh tab completions
+zstyle ':completion:*' list-colors ''
