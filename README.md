@@ -26,8 +26,6 @@ cp -r ~/.local/share/terminal-zero/config/* ~/.config/
 
 ```
 rm -f ~/.zcompdump
-chmod -R go-w "$(brew --prefix)/share"
-chmod -R go-w "$(brew --prefix)/share/zsh"
 ```
 
 ## Add this to the top of your ~/.zshrc file
