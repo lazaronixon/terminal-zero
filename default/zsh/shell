@@ -8,6 +8,3 @@ SAVEHIST="${HISTSIZE}"
 # Autocompletion
 FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 autoload -Uz compinit && compinit
-
-# Set theme for bat command
-export BAT_THEME=ansi

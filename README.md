@@ -30,7 +30,7 @@ chmod -R go-w "$(brew --prefix)/share"
 chmod -R go-w "$(brew --prefix)/share/zsh"
 ```
 
-## Copy this to your ~/.zshrc
+## Add this to the top of your ~/.zshrc file
 
 ```
 # All the default terminal-zero aliases and functions

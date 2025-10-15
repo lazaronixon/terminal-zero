@@ -2,3 +2,4 @@ source ~/.local/share/terminal-zero/default/zsh/shell
 source ~/.local/share/terminal-zero/default/zsh/aliases
 source ~/.local/share/terminal-zero/default/zsh/init
 source ~/.local/share/terminal-zero/default/zsh/misc
+source ~/.local/share/terminal-zero/default/zsh/envs
