@@ -13,8 +13,15 @@ alias ....='cd ../../..'
 
 # Tools
 alias d='docker'
-alias r='rails'
 alias n='nvim'
+
+# Rails
+alias r='rails'
+alias rt='rails test:all'
+alias rs='rails server'
+alias rbd='bin/dev'
+alias rc='rails console'
+alias rdm='rails db:migrate'
 
 # Git
 alias g='git'
