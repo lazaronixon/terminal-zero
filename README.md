@@ -3,7 +3,7 @@
 ## Requirements
 
 ```
-brew install fzf bat zoxide ripgrep eza fd starship zsh-completions
+brew install font-meslo-lg-nerd-font fzf bat zoxide ripgrep eza fd zsh-completions starship
 ```
 
 ## Installation
@@ -22,8 +22,6 @@ git clone https://github.com/lazaronixon/terminal-zero ~/.local/share/terminal-z
 cp -r ~/.local/share/terminal-zero/config/* ~/.config/
 ```
 
-## Post Install
-
 ```
 rm -f ~/.zcompdump
 ```
@@ -34,6 +32,10 @@ rm -f ~/.zcompdump
 # All the default terminal-zero aliases and functions
 source ~/.local/share/terminal-zero/default/zsh/rc
 ```
+
+## Set font
+
+Set the font in your terminal emulator to "MesloLGL Nerd Font".
 
 ## Guides
 
