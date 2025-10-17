@@ -11,6 +11,9 @@ setopt auto_menu
 setopt complete_in_word
 setopt always_to_end
 
+# Create cache directory if it doesn't exist
+[[ -d $HOME/.zsh_completion ]] || mkdir -p $HOME/.zsh_completion
+
 # Enable menu selection for completion
 zstyle ':completion:*:*:*:*:*' menu select
 
