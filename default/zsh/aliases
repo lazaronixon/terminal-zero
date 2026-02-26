@@ -12,6 +12,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Tools
+alias c='opencode'
+alias cx='claude --allow-dangerously-skip-permissions'
 alias d='docker'
 alias r='rails'
 alias n='nv'
