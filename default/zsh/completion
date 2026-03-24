@@ -10,6 +10,7 @@ unsetopt flowcontrol
 setopt auto_menu
 setopt complete_in_word
 setopt always_to_end
+setopt no_bang_hist
 
 # Create cache directory if it doesn't exist
 [[ -d $HOME/.zsh_completion ]] || mkdir -p $HOME/.zsh_completion
