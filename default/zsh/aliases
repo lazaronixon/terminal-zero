@@ -17,6 +17,8 @@ alias cx='printf "\033[2J\033[3J\033[H" && claude --permission-mode bypassPermis
 alias d='docker'
 alias r='rails'
 alias n='nv'
+alias ic='tdl c'
+alias ix='tdl cx'
 
 # Git
 alias g='git'
@@ -37,4 +39,22 @@ zd() {
 
 nv() {
   if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi;
+}
+
+tdl() {
+  osascript - "$1" <<'EOF'
+on run argv
+  set aiTool to item 1 of argv
+  tell application "Ghostty"
+    set ed to focused terminal of selected tab of front window
+    set tm to split ed direction down
+    perform action "resize_split:down,275" on tm
+    set ai to split ed direction right
+    perform action "resize_split:right,315" on ai
+    input text ("nvim ." & return) to ed
+    input text (aiTool & return) to ai
+    focus ed
+  end tell
+end run
+EOF
 }
