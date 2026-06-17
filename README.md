@@ -3,7 +3,8 @@
 ## Requirements
 
 ```
-brew install font-meslo-lg-nerd-font fzf bat zoxide ripgrep eza fd zsh-completions starship
+brew install --cask font-jetbrains-mono-nerd-font
+brew install fzf bat zoxide ripgrep eza fd zsh-completions starship
 ```
 
 ## Installation
@@ -35,7 +36,7 @@ source ~/.local/share/terminal-zero/default/zsh/rc
 
 ## Set font
 
-Set the font in your terminal emulator to "MesloLGL Nerd Font".
+Set the font in your terminal emulator to "JetBrainsMono Nerd Font".
 
 ## Guides
 
