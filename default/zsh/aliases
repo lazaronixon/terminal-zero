@@ -42,19 +42,20 @@ nv() {
 }
 
 tdl() {
-  osascript - "$1" <<'EOF'
-on run argv
-  set aiTool to item 1 of argv
+osascript <<EOF
   tell application "Ghostty"
-    set ed to focused terminal of selected tab of front window
-    set tm to split ed direction down
-    perform action "resize_split:down,275" on tm
-    set ai to split ed direction right
-    perform action "resize_split:right,315" on ai
-    input text ("nvim ." & return) to ed
-    input text (aiTool & return) to ai
-    focus ed
+    set paneEditor to focused terminal of selected tab of front window
+
+    set panelTerm to split paneEditor direction down
+    perform action "resize_split:down,250" on panelTerm
+
+    set panelAi to split paneEditor direction right
+    perform action "resize_split:right,250" on panelAi
+
+    input text "$EDITOR .\n" to paneEditor
+    input text "$1\n" to panelAi
+
+    focus paneEditor
   end tell
-end run
 EOF
 }
