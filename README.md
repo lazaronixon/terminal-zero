@@ -14,6 +14,7 @@ brew install fzf bat zoxide ripgrep eza fd zsh-completions starship
 ```
 rm -rf ~/.config/starship.toml
 rm -rf ~/.local/share/terminal-zero
+rm -rf ~/.zcompdump
 ```
 
 ### Install Terminal Zero
@@ -23,8 +24,10 @@ git clone https://github.com/lazaronixon/terminal-zero ~/.local/share/terminal-z
 cp -r ~/.local/share/terminal-zero/config/* ~/.config/
 ```
 
+### Suppress the login banner
+
 ```
-rm -f ~/.zcompdump
+touch ~/.hushlogin
 ```
 
 ## Add this to the top of your ~/.zshrc file
